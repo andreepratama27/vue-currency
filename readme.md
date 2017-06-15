@@ -16,8 +16,7 @@ Use this component into your html like:
 <vue-currency
  name="your-component_name"
  class="your-classname"
- placeholder="your-placeholder"
->
+ placeholder="your-placeholder">
 </vue-currency>
 ```
 

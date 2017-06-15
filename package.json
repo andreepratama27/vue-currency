@@ -1,14 +1,21 @@
 {
   "name": "vue-currency",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
+	"description": "a simple component for make currency to your input",
   "license": "MIT",
   "scripts": {
-    "watch": "webpack -w --config ./webpack/webpack.config.js",
-    "build": "webpack --config ./webpack/webpack.config.js",
     "test": "karma start",
     "test:watch": "karma start --single-run=false"
   },
+	"keywords": {
+		"vue",
+		"vue2",
+		"currency",
+		"input"
+	},
+	"author": "Andre Pratama <andreepratama27@gmail.com>",
+	"homepage": "https://github.com/andreepratama27/vue-currency#readme",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
