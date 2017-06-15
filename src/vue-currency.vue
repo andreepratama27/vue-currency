@@ -1,5 +1,5 @@
 <template>
-    <input type='text' id='mask' :value="value" :class="class">
+    <input type='text' id='mask' :value="value" class="" :class="">
 </template>
 
 <script>

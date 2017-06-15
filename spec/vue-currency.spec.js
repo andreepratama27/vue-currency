@@ -10,7 +10,10 @@ const getComponent = (Component, props) => {
 describe('vue currency', () => {
 
   it('will return a dom', () => {
-    const compon = getComponent(VueCurrency)
+    const compon = getComponent(VueCurrency, {
+      class: 'form-control',
+      placeholder: 'input currency'
+    })
     expect(compon).toBeTruthy()
   })
 

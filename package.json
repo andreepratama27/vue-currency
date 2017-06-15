@@ -2,20 +2,20 @@
   "name": "vue-currency",
   "version": "0.0.1",
   "main": "index.js",
-	"description": "a simple component for make currency to your input",
+  "description": "a simple component for make currency to your input",
   "license": "MIT",
   "scripts": {
     "test": "karma start",
     "test:watch": "karma start --single-run=false"
   },
-	"keywords": [
-		"vue",
-		"vue2",
-		"currency",
-		"input"
-	],
-	"author": "Andre Pratama <andreepratama27@gmail.com>",
-	"homepage": "https://github.com/andreepratama27/vue-currency#readme",
+  "keywords": [
+    "vue",
+    "vue2",
+    "currency",
+    "input"
+  ],
+  "author": "Andre Pratama <andreepratama27@gmail.com>",
+  "homepage": "https://github.com/andreepratama27/vue-currency#readme",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
@@ -29,6 +29,7 @@
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.1.1",
     "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
     "karma-spec-reporter": "^0.0.31",
     "karma-webpack": "^2.0.3",
     "vue-html-loader": "^1.2.4",
