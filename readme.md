@@ -14,9 +14,9 @@ Use this component into your html like:
 
 ```html
 <vue-currency
-name="your-component_name"
-class="your-classname"
-placeholder="your-placeholder"
+ name="your-component_name"
+ class="your-classname"
+ placeholder="your-placeholder"
 >
 </vue-currency>
 ```
