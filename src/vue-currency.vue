@@ -18,9 +18,13 @@
           },
 
           value: {
-              required: true,
               type: [Number, String]
-          }
+					},
+
+					placeholder: {
+							required: true,
+							type: String
+					}
       },
 
       mounted () {
