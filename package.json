@@ -8,12 +8,12 @@
     "test": "karma start",
     "test:watch": "karma start --single-run=false"
   },
-	"keywords": {
+	"keywords": [
 		"vue",
 		"vue2",
 		"currency",
 		"input"
-	},
+	],
 	"author": "Andre Pratama <andreepratama27@gmail.com>",
 	"homepage": "https://github.com/andreepratama27/vue-currency#readme",
   "devDependencies": {
