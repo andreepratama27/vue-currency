@@ -1,7 +1,7 @@
 {
   "name": "vue-currency",
   "version": "0.0.3",
-  "main": "index.js",
+  "main": "./src/vue-currency.vue",
   "description": "a simple component for make currency to your input",
   "license": "MIT",
   "scripts": {
