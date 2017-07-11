@@ -29,15 +29,16 @@
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.1.1",
     "karma-jasmine": "^1.1.0",
-    "karma-phantomjs-launcher": "^1.0.4",
     "karma-spec-reporter": "^0.0.31",
-    "karma-webpack": "^2.0.3",
+    "karma-webpack": "^2.0.4",
     "vue-html-loader": "^1.2.4",
-    "vue-loader": "^12.2.1"
+    "vue-loader": "^12.2.1",
+    "webpack": "^3.1.0"
   },
   "dependencies": {
     "jquery": "^3.2.1",
     "jquery-mask-plugin": "^1.14.11",
+    "karma-phantomjs-launcher": "^1.0.4",
     "vue": "^2.3.4",
     "vue-template-compiler": "^2.3.4"
   }

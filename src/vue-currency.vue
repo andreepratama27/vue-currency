@@ -1,5 +1,5 @@
 <template>
-    <input type="text" id="mask" :value="value" class="vue--currency">
+    <input type='text' id='mask' :value="value" :placeholder="placeholder">
 </template>
 
 <script>
