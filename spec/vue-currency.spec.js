@@ -1,20 +1,24 @@
 import Vue from 'vue'
 import VueCurrency from '../src/vue-currency.vue'
 
-const getComponent = (Component, props) => {
-  const comps = Vue.extend(Component)
-  const vm = new comps({ props: props}).$mount()
-  return vm.$el
-}
-
 describe('vue currency', () => {
 
   it('will return a dom', () => {
-    const compon = getComponent(VueCurrency, {
+    const Component = Vue.extend(VueCurrency)
+    const compon = new Component({
       class: 'form-control',
-      placeholder: 'input currency'
-    })
+      placeholder: 'Input currency'
+    }).$mount()
+
     expect(compon).toBeTruthy()
+  })
+
+  it('must have methods', () => {
+    expect(VueCurrency.methods).toBeTruthy()
+  })
+
+  it('methods must be function', () => {
+    console.log(VueCurrency.methods)
   })
 
 })

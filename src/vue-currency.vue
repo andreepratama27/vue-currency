@@ -1,5 +1,5 @@
 <template>
-    <input type='text' id='mask' :value="value" class="" :class="">
+    <input type='text' id='mask' :value="value" :placeholder="placeholder">
 </template>
 
 <script>
@@ -11,11 +11,6 @@
       name: 'vue-currency',
 
       props: {
-
-          class: {
-              required: true,
-              type: String
-          },
 
           value: {
               type: [Number, String]
