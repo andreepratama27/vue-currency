@@ -1,20 +1,16 @@
 import Vue from 'vue'
+import { mount } from 'avoriaz'
 import VueCurrency from '../src/vue-currency.vue'
-
-const getComponent = (Component, props) => {
-  const comps = Vue.extend(Component)
-  const vm = new comps({ props: props}).$mount()
-  return vm.$el
-}
 
 describe('vue currency', () => {
 
   it('will return a dom', () => {
-    const compon = getComponent(VueCurrency, {
-      class: 'form-control',
-      placeholder: 'input currency'
+    const compon = mount(VueCurrency, {
+      propsData: {
+        class: 'form-control',
+        placeholder: 'input currency'
+      }
     })
     expect(compon).toBeTruthy()
   })
-
 })
