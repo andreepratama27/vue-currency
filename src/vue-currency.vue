@@ -1,5 +1,5 @@
 <template>
-    <input type='text' id='mask' :value="value" :placeholder="placeholder">
+    <input type='text' id='mask' :value="value" :placeholder="placeholder" :class="customClass">
 </template>
 
 <script>
@@ -19,6 +19,10 @@
 					placeholder: {
 							required: true,
 							type: String
+					},
+
+				  customClass: {
+						type: String
 					}
       },
 
