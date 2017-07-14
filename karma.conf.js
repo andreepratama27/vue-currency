@@ -1,16 +1,22 @@
 module.exports = config => {
 
   config.set({
+
     browsers: [
       'PhantomJS'
-      // 'Chrome'
     ],
-    frameworks: ['jasmine'],
+
+    frameworks: ['mocha', 'chai'],
+
     files: ['spec/**/*.js'],
-    reporters: ['spec'],
+
+    reporters: ['spec', 'coverage'],
+
     preprocessors: {
+
       'spec/**/*.js': ['webpack']
     },
+
     webpack: {
       resolve: {
         alias: {
@@ -29,6 +35,13 @@ module.exports = config => {
           }
         ]
       }
+    },
+    coverageReporter: {
+      dir: './coverage',
+      reporters: [
+        { type: 'lcov', subdir: '.' },
+        { type: 'text-summary' }
+      ]
     },
 
     singleRun: true
