@@ -3,6 +3,12 @@ import VueCurrency from './vue-currency.vue'
 
 export default {
 
+  data () {
+    return {
+      count: ''
+    }
+  },
+
   components: {
     VueCurrency
   },
@@ -10,7 +16,7 @@ export default {
   render (h) {
     return (
       <div>
-          <vue-currency class="andre"></vue-currency>
+          <vue-currency class="andre" model=""></vue-currency>
       </div>
     )
   }
