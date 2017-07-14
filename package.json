@@ -38,6 +38,7 @@
     "karma-spec-reporter": "^0.0.31",
     "karma-webpack": "^2.0.4",
     "mocha": "^3.4.2",
+    "vue": "^2.4.1",
     "vue-html-loader": "^1.2.4",
     "vue-loader": "^12.2.1",
     "webpack": "^3.1.0",
@@ -47,7 +48,6 @@
     "jquery": "^3.2.1",
     "jquery-mask-plugin": "^1.14.11",
     "karma-phantomjs-launcher": "^1.0.4",
-    "vue": "^2.3.4",
     "vue-template-compiler": "^2.3.4"
   }
 }
