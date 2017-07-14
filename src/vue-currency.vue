@@ -17,7 +17,6 @@
 					},
 
 					placeholder: {
-							required: true,
 							type: String
 					},
 
