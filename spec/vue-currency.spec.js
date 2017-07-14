@@ -10,15 +10,15 @@ describe('vue currency', () => {
       placeholder: 'Input currency'
     }).$mount()
 
-    expect(compon).toBeTruthy()
+    assert.isOk(compon)
   })
 
   it('must have methods', () => {
-    expect(VueCurrency.methods).toBeTruthy()
+    assert.isOk(VueCurrency.methods)
   })
 
   it('methods must be function', () => {
-    console.log(VueCurrency.methods)
+    expect(VueCurrency.methods).to.be.an('object')
   })
 
 })

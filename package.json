@@ -1,10 +1,12 @@
 {
   "name": "vue-currency",
   "version": "0.0.7",
-  "main": "./src/vue-currency.vue",
+  "main": "./build/vue-currency.js",
   "description": "a simple component for make currency to your input",
   "license": "MIT",
   "scripts": {
+    "dev": "webpack-dev-server --watch --progress --config ./webpack/webpack-dev.config.js",
+    "build": "webpack --progress --config ./webpack/webpack-prod.config.js",
     "test": "karma start",
     "test:watch": "karma start --single-run=false"
   },
@@ -19,27 +21,32 @@
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-plugin-transform-vue-jsx": "^3.4.3",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.23.0",
-    "jasmine-core": "^2.6.3",
-    "karma": "^1.7.0",
-    "karma-chrome-launcher": "^2.1.1",
-    "karma-jasmine": "^1.1.0",
-    "karma-spec-reporter": "^0.0.31",
-    "karma-webpack": "^2.0.4",
-    "vue-html-loader": "^1.2.4",
-    "vue-loader": "^12.2.1",
-    "webpack": "^3.1.0"
-  },
-  "dependencies": {
+    "chai": "^4.1.0",
+    "html-webpack-plugin": "^2.29.0",
     "jquery": "^3.2.1",
     "jquery-mask-plugin": "^1.14.11",
+    "karma": "^1.7.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.3.0",
     "karma-phantomjs-launcher": "^1.0.4",
-    "vue": "^2.3.4",
-    "vue-template-compiler": "^2.3.4"
-  }
+    "karma-spec-reporter": "^0.0.31",
+    "karma-webpack": "^2.0.4",
+    "mocha": "^3.4.2",
+    "vue": "^2.4.1",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^12.2.1",
+    "vue-template-compiler": "^2.4.1",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "dependencies": {}
 }
