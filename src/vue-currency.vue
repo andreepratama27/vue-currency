@@ -1,5 +1,5 @@
 <template>
-    <input type='text' id='mask' :value="value" :placeholder="placeholder" :class="customClass">
+    <input type='text' id='mask' :value="value" :placeholder="placeholder" v-model="query" @input="_doInput(query)">
 </template>
 
 <script>
@@ -10,14 +10,31 @@
 
       name: 'vue-currency',
 
+      data () {
+          return {
+              query: ''
+          }
+      },
+
+        /*
+      watch: {
+
+          query (value) {
+              return this.$parent.$data[this.model] = value
+          }
+      }, */
+
       props: {
+
+          model: {
+              type: String
+          },
 
           value: {
               type: [Number, String]
 					},
 
 					placeholder: {
-							required: true,
 							type: String
 					},
 
@@ -36,6 +53,10 @@
               this.$nextTick(() => {
                   $('#mask').mask('000.000.000.000.000', { reverse: true})
               })
+          },
+
+          _doInput (query) {
+              this.$parent.$data[this.model] = query
           }
       }
     }
