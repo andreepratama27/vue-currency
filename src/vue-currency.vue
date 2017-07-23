@@ -1,10 +1,8 @@
 <template>
-    <input type='text' id='mask' :value="value" :placeholder="placeholder" v-model="query" @input="_doInput(query)">
+    <input type='number' id='mask' :value="nilai" :placeholder="placeholder" v-model="query" @input="_doInput()">
 </template>
 
 <script>
-    import $ from 'jquery'
-    import 'jquery-mask-plugin'
 
     export default {
 
@@ -12,23 +10,12 @@
 
       data () {
           return {
-              query: ''
+              query: '',
+              nilai: ''
           }
       },
 
-        /*
-      watch: {
-
-          query (value) {
-              return this.$parent.$data[this.model] = value
-          }
-      }, */
-
       props: {
-
-          model: {
-              type: String
-          },
 
           value: {
               type: [Number, String]
@@ -50,13 +37,16 @@
       methods: {
 
           _setupCurrency () {
-              this.$nextTick(() => {
-                  $('#mask').mask('000.000.000.000.000', { reverse: true})
-              })
           },
 
-          _doInput (query) {
-              this.$parent.$data[this.model] = query
+          _doInput () {
+              const number = parseInt(this.query)
+
+              const editing = number.toFixed(2).replace(/./g, function(c, i, a) {
+                  return i && c !== '.' && ((a.length - i) % 3 === 0) ? ',' + c : c
+              })
+
+              this.nilai = editing
           }
       }
     }
